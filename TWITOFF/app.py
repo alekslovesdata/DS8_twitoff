@@ -1,3 +1,5 @@
+"""Build my app factory and do routes and configuration"""
+
 from decouple import config
 from flask import Flask, render_template, request
 from .models import DB, User
