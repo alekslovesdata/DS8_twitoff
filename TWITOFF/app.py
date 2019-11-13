@@ -1,10 +1,14 @@
 """Build my app factory and do routes and configuration"""
 
 from decouple import config
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from .models import DB, User
-from .twitter import add_or_update_user
 from .predict import predict_user
+from .twitter import add_or_update_user
+
+from dotenv import load_dotenv
+load_dotenv()
 
 #now we make a app factory
 
