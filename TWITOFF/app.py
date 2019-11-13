@@ -1,6 +1,7 @@
 from decouple import config
 from flask import Flask, render_template, request
 from .models import DB, User
+from .twitter import add_or_update_user
 
 #now we make a app factory
 
